@@ -1,70 +1,101 @@
 ﻿using System;
 using System.Threading;
 
-namespace Matrix_App
+namespace test
 {
     class Program
     {
+        static object locker = new();
+        static int[] colums = new int[Console.WindowWidth];
         static void Main(string[] args)
         {
+            Console.WindowLeft = Console.WindowTop = 0;
+            Console.WindowWidth = Console.BufferWidth = Console.LargestWindowWidth;
+            Console.WindowHeight = Console.BufferHeight = Console.LargestWindowHeight;
+            //Console.SetWindowPosition(0, 0);
+            Console.CursorVisible = false;
+
             Random rnd = new();
-
-            char[] str = new char[rnd.Next(5, 15)];
-
-            for (int i = 0; i < str.Length; i++)
+            for (int i = 0; i < Console.WindowWidth; i++)
             {
-                str[i] = Convert.ToChar(rnd.Next(65, 125));
+                Thread.Sleep(rnd.Next(100, 1000));
+                Thread drop = new Thread(RunDrop);
+                drop.Start();
             }
 
-            //int xPosition = rnd.Next(80);
-            for (int i = 0; i < str.Length; i++)
-            {
-                SetCharColor(i);
-
-
-                //Console.Write(str[i]);
-                //Thread.Sleep(50);
-                //Console.SetCursorPosition(xPosition, i);
-                //Console.Write(Convert.ToChar(rnd.Next(65, 125)));
-                //Thread.Sleep(100);
-            }
-            Console.WriteLine();
-            Console.ResetColor();
-
-
-            while (true)
-            {
-                int xPosition = rnd.Next(80);
-                for (int i = 0; i < Console.WindowHeight; i++)
-                {
-
-                    for (int j = 0; j < str.Length; j++)
-                    {
-                        if (j <= i)
-                        {
-                            Console.SetCursorPosition(xPosition, i);
-                            Console.Write(str[j]);
-                            //Console.Clear();
-                        }
-                            Thread.Sleep(150);
-                    }
-                }
-            }
+            //RunDrop();
 
 
 
             Console.ReadKey();
         }
 
-        private static void SetCharColor(int i)
+        private static void RunDrop()
         {
-            if (i == 0)
+            Random rnd = new();
+            //int xPos;
+            int xPos = GetUnicColum(rnd);
+
+            while (true)
+            {
+                Console.CursorVisible = false;
+                int lenghtDrop = rnd.Next(5, 25);
+
+                for (int y = 0; y < Console.WindowHeight + lenghtDrop; y++)
+                {
+                    lock (locker)
+                    {
+                        int yPos = y;
+                        for (int i = 0; i < Console.WindowHeight + lenghtDrop + 1; i++)
+                        {
+                            if (yPos >= 0)
+                            {
+                                if (Console.WindowHeight - 3 - i < lenghtDrop)
+                                    lenghtDrop--;
+                                Console.SetCursorPosition(xPos, yPos--);
+                                if (i < lenghtDrop)
+                                {
+                                    SetCharColor(i);
+                                    Console.WriteLine(GetChar());
+                                }
+                                //if (i == lenghtDrop)
+                                Console.WriteLine(' ');
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        private static int GetUnicColum(Random rnd)
+        {
+            int xPos;
+            while (true)
+            {
+                xPos = rnd.Next(Console.WindowWidth);
+                if (colums[xPos] == 0)
+                {
+                    colums[xPos] = xPos;
+                    break;
+                }
+            }
+            return xPos;
+        }
+
+        private static char GetChar()
+        {
+            Random rnd = new();
+            return Convert.ToChar(rnd.Next(65, 125));
+        }
+
+        private static void SetCharColor(int charPositionInDrop)
+        {
+            if (charPositionInDrop == 0)
                 Console.ForegroundColor = ConsoleColor.White;
-            else if (i == 1)
+            else if (charPositionInDrop == 1)
                 Console.ForegroundColor = ConsoleColor.Green;
             else
                 Console.ForegroundColor = ConsoleColor.DarkGreen;
         }
-
     }
 }
