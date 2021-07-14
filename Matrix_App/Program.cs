@@ -39,7 +39,7 @@ namespace test
             while (true)
             {
                 Console.CursorVisible = false;
-                int lenghtDrop = rnd.Next(5, 25);
+                int lenghtDrop = rnd.Next(5, 30);
 
                 for (int y = 0; y < Console.WindowHeight + lenghtDrop; y++)
                 {
