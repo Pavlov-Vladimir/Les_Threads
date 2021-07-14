@@ -1,0 +1,16 @@
+C:\Users\Bob\source\repos\Threads_App\Matrix_App\bin\Debug\net5.0\Matrix_App.exe
+C:\Users\Bob\source\repos\Threads_App\Matrix_App\bin\Debug\net5.0\Matrix_App.deps.json
+C:\Users\Bob\source\repos\Threads_App\Matrix_App\bin\Debug\net5.0\Matrix_App.runtimeconfig.json
+C:\Users\Bob\source\repos\Threads_App\Matrix_App\bin\Debug\net5.0\Matrix_App.runtimeconfig.dev.json
+C:\Users\Bob\source\repos\Threads_App\Matrix_App\bin\Debug\net5.0\Matrix_App.dll
+C:\Users\Bob\source\repos\Threads_App\Matrix_App\bin\Debug\net5.0\ref\Matrix_App.dll
+C:\Users\Bob\source\repos\Threads_App\Matrix_App\bin\Debug\net5.0\Matrix_App.pdb
+C:\Users\Bob\source\repos\Threads_App\Matrix_App\obj\Debug\net5.0\Matrix_App.csproj.AssemblyReference.cache
+C:\Users\Bob\source\repos\Threads_App\Matrix_App\obj\Debug\net5.0\Matrix_App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bob\source\repos\Threads_App\Matrix_App\obj\Debug\net5.0\Matrix_App.AssemblyInfoInputs.cache
+C:\Users\Bob\source\repos\Threads_App\Matrix_App\obj\Debug\net5.0\Matrix_App.AssemblyInfo.cs
+C:\Users\Bob\source\repos\Threads_App\Matrix_App\obj\Debug\net5.0\Matrix_App.csproj.CoreCompileInputs.cache
+C:\Users\Bob\source\repos\Threads_App\Matrix_App\obj\Debug\net5.0\Matrix_App.dll
+C:\Users\Bob\source\repos\Threads_App\Matrix_App\obj\Debug\net5.0\ref\Matrix_App.dll
+C:\Users\Bob\source\repos\Threads_App\Matrix_App\obj\Debug\net5.0\Matrix_App.pdb
+C:\Users\Bob\source\repos\Threads_App\Matrix_App\obj\Debug\net5.0\Matrix_App.genruntimeconfig.cache

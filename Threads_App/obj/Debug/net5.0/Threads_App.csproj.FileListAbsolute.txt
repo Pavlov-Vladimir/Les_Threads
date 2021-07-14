@@ -1,0 +1,16 @@
+C:\Users\Bob\source\repos\Threads_App\Threads_App\bin\Debug\net5.0\Threads_App.exe
+C:\Users\Bob\source\repos\Threads_App\Threads_App\bin\Debug\net5.0\Threads_App.deps.json
+C:\Users\Bob\source\repos\Threads_App\Threads_App\bin\Debug\net5.0\Threads_App.runtimeconfig.json
+C:\Users\Bob\source\repos\Threads_App\Threads_App\bin\Debug\net5.0\Threads_App.runtimeconfig.dev.json
+C:\Users\Bob\source\repos\Threads_App\Threads_App\bin\Debug\net5.0\Threads_App.dll
+C:\Users\Bob\source\repos\Threads_App\Threads_App\bin\Debug\net5.0\ref\Threads_App.dll
+C:\Users\Bob\source\repos\Threads_App\Threads_App\bin\Debug\net5.0\Threads_App.pdb
+C:\Users\Bob\source\repos\Threads_App\Threads_App\obj\Debug\net5.0\Threads_App.csproj.AssemblyReference.cache
+C:\Users\Bob\source\repos\Threads_App\Threads_App\obj\Debug\net5.0\Threads_App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bob\source\repos\Threads_App\Threads_App\obj\Debug\net5.0\Threads_App.AssemblyInfoInputs.cache
+C:\Users\Bob\source\repos\Threads_App\Threads_App\obj\Debug\net5.0\Threads_App.AssemblyInfo.cs
+C:\Users\Bob\source\repos\Threads_App\Threads_App\obj\Debug\net5.0\Threads_App.csproj.CoreCompileInputs.cache
+C:\Users\Bob\source\repos\Threads_App\Threads_App\obj\Debug\net5.0\Threads_App.dll
+C:\Users\Bob\source\repos\Threads_App\Threads_App\obj\Debug\net5.0\ref\Threads_App.dll
+C:\Users\Bob\source\repos\Threads_App\Threads_App\obj\Debug\net5.0\Threads_App.pdb
+C:\Users\Bob\source\repos\Threads_App\Threads_App\obj\Debug\net5.0\Threads_App.genruntimeconfig.cache
