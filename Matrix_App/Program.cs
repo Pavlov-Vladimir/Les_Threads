@@ -12,22 +12,18 @@ namespace test
             Console.WindowLeft = Console.WindowTop = 0;
             Console.WindowWidth = Console.BufferWidth = Console.LargestWindowWidth;
             Console.WindowHeight = Console.BufferHeight = Console.LargestWindowHeight;
-            //Console.SetWindowPosition(0, 0);
+            Console.SetWindowPosition(0, 0);
             Console.CursorVisible = false;
 
             Random rnd = new();
             for (int i = 0; i < Console.WindowWidth; i++)
             {
+                if (i < 30)
+                    Thread.Sleep(rnd.Next(100));
                 Thread.Sleep(rnd.Next(100, 1000));
                 Thread drop = new Thread(RunDrop);
                 drop.Start();
             }
-
-            //RunDrop();
-
-
-
-            Console.ReadKey();
         }
 
         private static void RunDrop()

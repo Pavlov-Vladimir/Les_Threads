@@ -9,9 +9,6 @@ namespace test
         static int[] colums = new int[Console.WindowWidth];
         static void Main(string[] args)
         {
-            Console.SetWindowSize(220, 80);
-            Console.SetWindowPosition(0, 0);
-
             Random rnd = new();
             for (int i = 0; i < Console.WindowWidth; i++)
             {
