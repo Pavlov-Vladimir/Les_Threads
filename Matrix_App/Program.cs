@@ -19,8 +19,8 @@ namespace test
             for (int i = 0; i < Console.WindowWidth; i++)
             {
                 if (i < 30)
-                    Thread.Sleep(rnd.Next(100));
-                Thread.Sleep(rnd.Next(100, 1000));
+                    Thread.Sleep(rnd.Next(50));
+                Thread.Sleep(rnd.Next(50, 500));
                 Thread drop = new Thread(RunDrop);
                 drop.Start();
             }
